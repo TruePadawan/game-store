@@ -1,38 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap');
+
 .App {
-  text-align: center;
+    color: white;
+    background-image: url(../resources/images/gaming.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+nav {
+    /* padding: 2% 3%; */
+    padding: 20px 20px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10%;
+    font-size: 1.5rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+nav a {
+    text-decoration-thickness: 2px;
+    text-underline-offset: 4px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+nav a:hover {
+    text-decoration: underline;
 }
 
-.App-link {
-  color: #61dafb;
+.content {
+    padding: 12% 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    width: max-content;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.desc {
+    font-size: 20px;
+}
+
+.btn {
+    border-radius: 8px;
+}
+
+.discover-btn {
+    color: inherit;
+    background-color: transparent;
+    
+    border: 2px solid white;
+    padding: 16px 32px;
+
+    font-family: 'Lato', sans-serif;
+    font-size: 1.2rem;
+}
+
+.discover-btn:hover {
+    background-color: white;
+    color: black;
 }
