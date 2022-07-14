@@ -2,7 +2,7 @@
 
 .App {
     color: white;
-    background-image: url(../resources/images/gaming.jpg);
+    background-image: url(../resources/images/background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -13,7 +13,7 @@ nav {
     display: flex;
     justify-content: flex-end;
     gap: 10%;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 
 nav a {
@@ -21,7 +21,7 @@ nav a {
     text-underline-offset: 4px;
 }
 
-nav a:hover {
+nav a:hover, nav a.active {
     text-decoration: underline;
 }
 
@@ -42,6 +42,7 @@ nav a:hover {
     border-radius: 8px;
 }
 
+/* ------------------------- DISCOVER ------------------------- */
 .discover-btn {
     color: inherit;
     background-color: transparent;
@@ -56,4 +57,10 @@ nav a:hover {
 .discover-btn:hover {
     background-color: white;
     color: black;
+}
+
+.cart-btn {
+    border: none;
+    background-color: transparent;
+    font-size: inherit;
 }
