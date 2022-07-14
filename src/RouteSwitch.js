@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import App from "./App";
-import Discover from "./components/Discover";
+import Discover from "./components/pages/Discover";
 
 const RouteSwitch = () => {
     return (
