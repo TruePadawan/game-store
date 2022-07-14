@@ -8,10 +8,10 @@ const FeaturedItems = ({ children }) => {
     <div className="featured-items">
       <div className="backdrop"></div>
       {children}
-      <button type="button" className="btn-control left">
+      <button type="button" className="btn-control left" title="left">
         <img src={Left} alt="" />
       </button>
-      <button type="button" className="btn-control right">
+      <button type="button" className="btn-control right" title="right">
         <img src={Right} alt="" />
       </button>
     </div>

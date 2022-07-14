@@ -9,9 +9,9 @@ const FeaturedItem = (props) => {
                 <span className="name">{props.name}</span>
                 <span className="price">
                     <span className="current">$14.99</span>
-                    <span className="former">$29.99</span>
+                    <sub className="former">$29.99</sub>
                 </span>
-                <button className="add-to-cart btn">Add to Cart</button>
+                <button type="button" className="add-to-cart btn">Add to Cart</button>
             </div>
         </div>
     );

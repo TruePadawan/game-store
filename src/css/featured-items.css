@@ -10,22 +10,23 @@
 }
 
 .featured-items .backdrop {
+    z-index: 1;
     width: 100%;
     height: 100%;
     background-color: rgba(20, 20, 20, 0.431);
     position: absolute;
 }
 
-.featured-img {
-    width: 100%;
-    height: auto;
-}
-
 .btn-control {
+    z-index: 2;
     background-color: transparent;
     border: none;
     position: absolute;
     top: calc(50% - 30px);
+}
+
+.btn-control:hover {
+    transform: scale(1.1);
 }
 
 .btn-control.left {
