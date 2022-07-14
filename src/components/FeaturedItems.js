@@ -1,7 +1,7 @@
 import Left from "../resources/images/left.png";
 import Right from "../resources/images/right.png";
 
-import "../css/featured-item.css";
+import "../css/featured-items.css";
 
 const FeaturedItems = ({ children }) => {
   return (
