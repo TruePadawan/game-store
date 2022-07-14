@@ -21,7 +21,6 @@ export default function Discover()
               imgAlt={"GTA 5"}
               name={"Grand Theft Auto: V"}
             />
-            {/* <img src={GTAVImg} alt={"GTA 5"} className="featured-img" /> */}
           </FeaturedItems>
         </div>
       </>
