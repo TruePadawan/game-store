@@ -8,12 +8,20 @@
 }
 
 nav {
-    /* padding: 2% 3%; */
     padding: 20px 20px;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    gap: 10%;
+}
+
+nav > .title {
+    font-size: 1.3rem;
+}
+
+.home-nav {
     display: flex;
     justify-content: flex-end;
-    gap: 10%;
-    font-size: 1.2rem;
 }
 
 nav a {
@@ -21,7 +29,7 @@ nav a {
     text-underline-offset: 4px;
 }
 
-nav a:hover, nav a.active {
+nav a:hover:not(.title), nav a.active {
     text-decoration: underline;
 }
 
@@ -63,4 +71,31 @@ nav a:hover, nav a.active {
     border: none;
     background-color: transparent;
     font-size: inherit;
+}
+
+.page-links {
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10%;
+}
+
+.page {
+    padding-bottom: 1rem;
+}
+
+section {
+    padding: 0 10%;
+}
+
+section > h2 {
+    font-weight: normal;
+    font-family: 'Lato', sans-serif;
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 786px) {
+    section {
+        padding: 0 25px;
+    }
 }
