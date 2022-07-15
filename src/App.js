@@ -4,7 +4,7 @@ import "./css/App.css";
 function App() {
   return (
     <div className="App">
-      <nav>
+      <nav className="home-nav">
         <Link to={"/discover"}>Discover</Link>
         <Link to={"/store"}>Store</Link>
       </nav>
