@@ -44,3 +44,7 @@ h1 {
 button {
   cursor: pointer;
 }
+
+input:focus {
+  outline: none;
+}

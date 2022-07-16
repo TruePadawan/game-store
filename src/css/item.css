@@ -1,7 +1,18 @@
 .items {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 230px);
+    justify-content: space-between;
     max-width: 1500px;
+}
+
+.items.store {
+    margin: 0 auto;
+    display: grid;
+    row-gap: 1.5rem;
+    /* grid-template-columns: repeat(4, max-content); */
+    /* justify-content: space-between; */
+    padding: 2rem;
+    /* max-width: 100%; */
 }
 
 .item {

@@ -94,6 +94,31 @@ section > h2 {
     margin-bottom: 10px;
 }
 
+/* ---------------------- STORE ---------------------- */
+.sticky {
+    padding: 20px 20px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #242424;
+}
+
+.search-bar, .category-bar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.search-bar > input, .category-bar > select {
+    border: 3px solid #4E4E4E;
+    background-color: #181818;
+    height: 25px;
+}
+
+.category-bar > select {
+    width: 150px;
+    font-size: 1rem;
+}
+
 @media screen and (max-width: 786px) {
     section {
         padding: 0 25px;
