@@ -13,13 +13,12 @@ html {
   padding: 0;
 }
 
-body, #root, html, .App {
-  height: 100%;
-}
-
 body {
-  background-color: #121212;
   color: white;
+  background-image: url(../resources/images/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
 }
 
 body::-webkit-scrollbar {
