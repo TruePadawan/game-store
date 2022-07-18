@@ -64,3 +64,20 @@
     flex-grow: 1;
     text-align: right;
 }
+
+.checkout-btn {
+    width: 100%;
+    background-color: #242323;
+    color: white;
+    padding: 15px;
+    border: none;
+    font-size: large;
+}
+
+.checkout-btn:hover {
+    background-color: #181717;
+}
+
+.checkout-btn:active {
+    background-color: black;
+}

@@ -31,6 +31,7 @@ const Cart = ({close, items}) => {
                         <span>Total</span>
                         <span>{`$${total}`}</span>
                     </div>
+                    <button type="button" className="checkout-btn">Checkout</button>
                 </div>
             </div>
         </div>
