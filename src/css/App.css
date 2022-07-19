@@ -124,4 +124,9 @@ section > h2 {
     .search-bar, .category-bar {
         flex-direction: column;
     }
+
+    .category-bar option {
+        width: 150px;
+        font-size: smaller;
+    }
 }
