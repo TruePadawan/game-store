@@ -1,0 +1,21 @@
+.cart-btn-container {
+    position: relative;
+}
+
+.cart-btn {
+    border: none;
+    background-color: transparent;
+    font-size: inherit;
+}
+
+.cart-items-amount {
+    position: absolute;
+    font-size: small;
+    min-width: 15px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: white;
+    color: black;
+    bottom: -5px;
+    padding: 2px;
+}

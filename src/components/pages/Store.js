@@ -14,8 +14,11 @@ import HaloImg from "../../resources/images/halo.png";
 import ASCUImg from "../../resources/images/ascu.jpg";
 import CODBO from "../../resources/images/cod.jpg";
 import ForzaImg from "../../resources/images/forza.jpg";
+import CartButton from "../CartButton";
 
 const Store = (props) => {
+  const cartItemCount = props.cartData.length;
+
     return (
       <>
         {props.cartOpen && <Cart close={props.closeCart} items={props.cartData} />}
@@ -25,7 +28,7 @@ const Store = (props) => {
             <div className="page-links">
               <Link to={"/discover"}>Discover</Link>
               <Link to={"/store"} className="active">Store</Link>
-              <button className="cart-btn" type="button" onClick={props.openCart}>Cart</button>
+              <CartButton onClick={props.openCart} itemCount={cartItemCount} />
             </div>
           </nav>
           <div className="sticky">

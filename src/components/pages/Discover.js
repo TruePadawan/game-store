@@ -13,8 +13,11 @@ import ForzaImg from "../../resources/images/forza.jpg";
 import SkyrimImg from "../../resources/images/skyrim.png";
 import ASCUImg from "../../resources/images/ascu.jpg";
 import SB2Img from "../../resources/images/sb2.jpg";
+import CartButton from "../CartButton";
 
 const Discover = ({cartOpen, openCart, closeCart, addCartItem, cartData}) => {
+  const cartItemCount = cartData.length;
+
   return (
     <>
     {cartOpen && <Cart close={closeCart} items={cartData} />}
@@ -24,7 +27,7 @@ const Discover = ({cartOpen, openCart, closeCart, addCartItem, cartData}) => {
           <div className="page-links">
             <Link to={"/discover"} className="active">Discover</Link>
             <Link to={"/store"}>Store</Link>
-            <button className="cart-btn" type="button" onClick={openCart}>Cart</button>
+            <CartButton onClick={openCart} itemCount={cartItemCount} />
           </div>
         </nav>
         <div className="featured">

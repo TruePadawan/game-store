@@ -60,12 +60,6 @@ nav a:hover:not(.title), nav a.active {
     color: black;
 }
 
-.cart-btn {
-    border: none;
-    background-color: transparent;
-    font-size: inherit;
-}
-
 .page-links {
     flex-grow: 1;
     display: flex;
