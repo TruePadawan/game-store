@@ -23,10 +23,10 @@ const Discover = (props) => {
     {props.cartOpen && <Cart close={props.closeCart} items={props.cartData} addItem={props.addCartItem} removeItem={props.removeCartItem} />}
       <div className="page">
         <nav>
-          <Link to={"/"} className="title">HERMES</Link>
+          <Link to={"/game-store"} className="title">HERMES</Link>
           <div className="page-links">
-            <Link to={"/discover"} className="active">Discover</Link>
-            <Link to={"/store"}>Store</Link>
+            <Link to={"/game-store/discover"} className="active">Discover</Link>
+            <Link to={"/game-store/store"}>Store</Link>
             <CartButton onClick={props.openCart} itemCount={cartItemCount} />
           </div>
         </nav>
