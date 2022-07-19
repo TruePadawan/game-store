@@ -1,8 +1,11 @@
+import { useContext } from "react";
+import { Context } from "../context/ContextProvider";
 import "../css/featured-item.css";
 
 const FeaturedItem = (props) => {
+  const { addCartItem } = useContext(Context);
   const addToCart = () => {
-    props.addCartItem({
+    addCartItem({
       name: props.name,
       price: 14.99,
     });
