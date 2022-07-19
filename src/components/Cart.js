@@ -5,7 +5,7 @@ import CartItem from "./CartItem";
 import "../css/cart.css";
 
 const Cart = () => {
-    const { closeCart, getCartItems, addCartItem, removeCartItem } = useContext(Context);
+    const { closeCart, getCartItems, addCartItem, removeCartItem, clearCart } = useContext(Context);
     
     const items = getCartItems();
     const cartItems = items.map(item => {
@@ -33,7 +33,7 @@ const Cart = () => {
                         <span>Total</span>
                         <span>{`$${total}`}</span>
                     </div>
-                    <button type="button" className="checkout-btn">Checkout</button>
+                    <button type="button" className="checkout-btn" onClick={clearCart}>Checkout</button>
                 </div>
             </div>
         </div>

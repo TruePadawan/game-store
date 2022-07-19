@@ -4,6 +4,7 @@ export const Context = createContext({
   getCartItems : () => {},
   addCartItem : () => {},
   removeCartItem : () => {},
+  clearCart : () => {},
   isCartOpen : () => {},
   openCart : () => {},
   closeCart : () => {},
@@ -46,6 +47,10 @@ const ContextProvider = ({ children }) => {
     setCartItems((latest) => remove(latest, itemName));
   };
 
+  const clearCart = () => {
+    setCartItems([]);
+  }
+
   const getCartItems = () => cartItems;
 
   const openCart = () => setCartOpen(true);
@@ -58,6 +63,7 @@ const ContextProvider = ({ children }) => {
         getCartItems,
         addCartItem,
         removeCartItem,
+        clearCart,
         isCartOpen,
         openCart,
         closeCart,
