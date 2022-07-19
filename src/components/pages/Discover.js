@@ -15,19 +15,19 @@ import ASCUImg from "../../resources/images/ascu.jpg";
 import SB2Img from "../../resources/images/sb2.jpg";
 import CartButton from "../CartButton";
 
-const Discover = ({cartOpen, openCart, closeCart, addCartItem, cartData}) => {
-  const cartItemCount = cartData.length;
+const Discover = (props) => {
+  const cartItemCount = props.cartData.length;
 
   return (
     <>
-    {cartOpen && <Cart close={closeCart} items={cartData} />}
+    {props.cartOpen && <Cart close={props.closeCart} items={props.cartData} addItem={props.addCartItem} removeItem={props.removeCartItem} />}
       <div className="page">
         <nav>
           <Link to={"/"} className="title">HERMES</Link>
           <div className="page-links">
             <Link to={"/discover"} className="active">Discover</Link>
             <Link to={"/store"}>Store</Link>
-            <CartButton onClick={openCart} itemCount={cartItemCount} />
+            <CartButton onClick={props.openCart} itemCount={cartItemCount} />
           </div>
         </nav>
         <div className="featured">
@@ -37,7 +37,7 @@ const Discover = ({cartOpen, openCart, closeCart, addCartItem, cartData}) => {
               imgAlt={"GTA 5"}
               displayName={"GTAV"}
               name={"Grand Theft Auto: V"}
-              addCartItem={addCartItem}
+              addCartItem={props.addCartItem}
             />
           </FeaturedItems>
         </div>
@@ -48,25 +48,25 @@ const Discover = ({cartOpen, openCart, closeCart, addCartItem, cartData}) => {
             img={DeadSpaceImg}
             imgAlt={"Dead Space 2"}
             itemName={"Dead Space 2"}
-              addCartItem={addCartItem}
+              addCartItem={props.addCartItem}
           />
             <Item
               img={EldenRingImg}
               imgAlt={"Elden Ring"}
               itemName={"Elden Ring"}
-              addCartItem={addCartItem}
+              addCartItem={props.addCartItem}
             />
             <Item
               img={SpidermanImg}
               imgAlt={"Spiderman"}
               itemName={"Marvel's Spider-Man Remastered"}
-              addCartItem={addCartItem}
+              addCartItem={props.addCartItem}
             />
             <Item
               img={HaloImg}
               imgAlt={"Halo Infinite"}
               itemName={"Halo Infinite"}
-              addCartItem={addCartItem}
+              addCartItem={props.addCartItem}
             />
           </ul>
         </section>
@@ -77,25 +77,25 @@ const Discover = ({cartOpen, openCart, closeCart, addCartItem, cartData}) => {
               img={ForzaImg}
               imgAlt={"Forza Horizon 3"}
               itemName={"Forza Horizon 3"}
-              addCartItem={addCartItem}
+              addCartItem={props.addCartItem}
             />
             <Item
               img={SkyrimImg}
               imgAlt={"Skyrim"}
               itemName={"The Elder Scrolls V: Skyrim"}
-              addCartItem={addCartItem}
+              addCartItem={props.addCartItem}
             />
             <Item
               img={ASCUImg}
               imgAlt={"ASCU"}
               itemName={"Assassin's Creed: Unity"}
-              addCartItem={addCartItem}
+              addCartItem={props.addCartItem}
             />
             <Item
               img={SB2Img}
               imgAlt={"Star Wars Battlefront II"}
               itemName={"Star Wars: Battlefront II"}
-              addCartItem={addCartItem}
+              addCartItem={props.addCartItem}
             />
           </ul>
         </section>

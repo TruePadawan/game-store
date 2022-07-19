@@ -23,6 +23,23 @@ const RouteSwitch = () => {
     return items;
   };
 
+  const remove = (latest, itemName) => {
+    let cartItems = [...latest];
+    let itemIndex = cartItems.findIndex(item => item.name === itemName);
+    cartItems[itemIndex].amount -= 1;
+    
+    if (cartItems[itemIndex].amount === 0)
+    {
+      let filteredItems = cartItems.filter(item => item.name !== itemName);
+      return filteredItems;
+    }
+    return cartItems;
+  }
+
+  const removeCartItem = (itemName) => {
+    setCartItems(latest => remove(latest, itemName));
+  }
+
   const addCartItem = (itemData) => {  
     setCartItems(latest => update(latest, itemData));
   };
@@ -39,6 +56,7 @@ const RouteSwitch = () => {
               closeCart={_closeCart}
               cartOpen={cartOpen}
               addCartItem={addCartItem}
+              removeCartItem={removeCartItem}
               cartData={cartItems}
             />
           }
@@ -51,6 +69,7 @@ const RouteSwitch = () => {
               closeCart={_closeCart}
               cartOpen={cartOpen}
               addCartItem={addCartItem}
+              removeCartItem={removeCartItem}
               cartData={cartItems}
             />
           }

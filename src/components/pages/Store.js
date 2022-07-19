@@ -21,7 +21,7 @@ const Store = (props) => {
 
     return (
       <>
-        {props.cartOpen && <Cart close={props.closeCart} items={props.cartData} />}
+        {props.cartOpen && <Cart close={props.closeCart} items={props.cartData} addItem={props.addCartItem} removeItem={props.removeCartItem} />}
         <div className="page">
           <nav>
             <Link to={"/"} className="title">HERMES</Link>

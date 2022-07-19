@@ -1,14 +1,11 @@
 import "../css/cart.css";
 import CloseIcon from "../resources/images/close.png";
+import CartItem from "./CartItem";
 
-const Cart = ({close, items}) => {
+const Cart = ({close, items, addItem, removeItem}) => {
     const cartItems = items.map(item => {
         return (
-            <li key={item.name} className="cart-item">
-                <span className="amount">{`${item.amount}x`}</span>
-                <span className="name">{item.name}</span>
-                <span className="price">{`$${item.price}`}</span>
-            </li>
+            <CartItem key={item.name} name={item.name} amount={item.amount} price={item.price} add={addItem} remove={removeItem} />
         );
     });
 
