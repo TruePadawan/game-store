@@ -1,11 +1,11 @@
-import { HashRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import App from "./App";
 import Discover from "./components/pages/Discover";
 import Store from "./components/pages/Store";
 
 const RouteSwitch = () => {
   return (
-    <HashRouter>
+    <BrowserRouter>
       <Routes>
         <Route path="/game-store" element={<App />} />
         <Route path="/game-store/discover" element={<Discover />} />
@@ -19,7 +19,7 @@ const RouteSwitch = () => {
           }
         />
       </Routes>
-    </HashRouter>
+    </BrowserRouter>
   );
 };
 
