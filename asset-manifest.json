@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/static/css/main.cb3b64d8.css",
+    "main.js": "/static/js/main.be3c1bb5.js",
+    "static/media/gta-featured.jpg": "/static/media/gta-featured.33294c81c44f7cdbbf4c.jpg",
+    "static/media/sgc.jpg": "/static/media/sgc.349b6784d6a90ea3ebf2.jpg",
+    "static/media/halo.png": "/static/media/halo.1b727f21c2737c998e98.png",
+    "static/media/skyrim.png": "/static/media/skyrim.41a29db8c67e9c79059c.png",
+    "static/media/background.jpg": "/static/media/background.16838317bf244597b23c.jpg",
+    "static/media/xbox.jpeg": "/static/media/xbox.5f410667967fff12b324.jpeg",
+    "static/media/spidey.jpg": "/static/media/spidey.4cdd5ed384bc90e0c4ea.jpg",
+    "static/media/forza.jpg": "/static/media/forza.f7f1f32de28901fbc700.jpg",
+    "static/media/ascu.jpg": "/static/media/ascu.2b5e7bd76bea6e1615e4.jpg",
+    "static/media/cod.jpg": "/static/media/cod.ea1fef1b24a501c60eb2.jpg",
+    "static/media/elden-ring.jpg": "/static/media/elden-ring.3e178d8744cec3a1a2e8.jpg",
+    "static/media/sleeping.jpg": "/static/media/sleeping.cbedd710432f579b6d7e.jpg",
+    "static/media/sb2.jpg": "/static/media/sb2.ec401775bcb01864b0fa.jpg",
+    "static/media/deadspace.jpg": "/static/media/deadspace.0099d86c7e029dfe139d.jpg",
+    "index.html": "/index.html",
+    "main.cb3b64d8.css.map": "/static/css/main.cb3b64d8.css.map",
+    "main.be3c1bb5.js.map": "/static/js/main.be3c1bb5.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cb3b64d8.css",
+    "static/js/main.be3c1bb5.js"
+  ]
+}
