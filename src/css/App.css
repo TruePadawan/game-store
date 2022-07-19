@@ -74,12 +74,25 @@ nav a:hover:not(.title), nav a.active {
 
 section {
     padding: 0 10%;
+    margin: 10px 0;
 }
 
 section > h2 {
     font-weight: normal;
     font-family: 'Lato', sans-serif;
     margin-bottom: 10px;
+}
+
+@media screen and (max-width: 1200px) {
+    section {
+        padding: 0 2rem;
+    }
+}
+
+@media screen and (max-width: 786px) {
+    section {
+        padding: 0 25px;
+    }
 }
 
 /* ---------------------- STORE ---------------------- */
@@ -92,6 +105,7 @@ section > h2 {
 
 .search-bar, .category-bar {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     gap: 10px;
 }
@@ -104,11 +118,10 @@ section > h2 {
 
 .category-bar > select {
     width: 150px;
-    font-size: 1rem;
 }
 
-@media screen and (max-width: 786px) {
-    section {
-        padding: 0 25px;
+@media screen and (max-width: 600px) {
+    .search-bar, .category-bar {
+        flex-direction: column;
     }
 }
