@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/game-store/static/css/main.5d9a0898.css",
-    "main.js": "/game-store/static/js/main.874ba29c.js",
+    "main.js": "/game-store/static/js/main.d09f27ba.js",
     "static/media/gta-featured.jpg": "/game-store/static/media/gta-featured.33294c81c44f7cdbbf4c.jpg",
     "static/media/sgc.jpg": "/game-store/static/media/sgc.349b6784d6a90ea3ebf2.jpg",
     "static/media/halo.png": "/game-store/static/media/halo.1b727f21c2737c998e98.png",
@@ -18,10 +18,10 @@
     "static/media/deadspace.jpg": "/game-store/static/media/deadspace.0099d86c7e029dfe139d.jpg",
     "index.html": "/game-store/index.html",
     "main.5d9a0898.css.map": "/game-store/static/css/main.5d9a0898.css.map",
-    "main.874ba29c.js.map": "/game-store/static/js/main.874ba29c.js.map"
+    "main.d09f27ba.js.map": "/game-store/static/js/main.d09f27ba.js.map"
   },
   "entrypoints": [
     "static/css/main.5d9a0898.css",
-    "static/js/main.874ba29c.js"
+    "static/js/main.d09f27ba.js"
   ]
 }
