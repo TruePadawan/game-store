@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap');
 
+body, #root, .App {
+    height: 100%;
+}
+
+.App {
+    backdrop-filter: brightness(80%);
+}
+
 nav {
     padding: 20px 20px;
     font-size: 1.2rem;
