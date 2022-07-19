@@ -1,8 +1,12 @@
+import { useContext } from "react";
+import { Context } from "../context/ContextProvider";
 import "../css/item.css";
 
 const Item = (props) => {
+  const { addCartItem } = useContext(Context);
+  
   const addToCart = () => {
-    props.addCartItem({
+    addCartItem({
       name: props.itemName,
       price: props.price || 14.99,
     });

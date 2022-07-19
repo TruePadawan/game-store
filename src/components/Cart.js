@@ -1,11 +1,16 @@
-import "../css/cart.css";
+import { useContext } from "react";
+import { Context } from "../context/ContextProvider";
 import CloseIcon from "../resources/images/close.png";
 import CartItem from "./CartItem";
+import "../css/cart.css";
 
-const Cart = ({close, items, addItem, removeItem}) => {
+const Cart = () => {
+    const { closeCart, getCartItems, addCartItem, removeCartItem } = useContext(Context);
+    
+    const items = getCartItems();
     const cartItems = items.map(item => {
         return (
-            <CartItem key={item.name} name={item.name} amount={item.amount} price={item.price} add={addItem} remove={removeItem} />
+            <CartItem key={item.name} name={item.name} amount={item.amount} price={item.price} add={addCartItem} remove={removeCartItem} />
         );
     });
 
@@ -14,11 +19,11 @@ const Cart = ({close, items, addItem, removeItem}) => {
     }, 0)).toFixed(2);
 
     return (
-        <div className="backdrop" onClick={close}>
+        <div className="backdrop" onClick={closeCart}>
             <div className="cart" onClick={e => e.stopPropagation()}>
                 <div className="header">
                     <h2>Cart</h2>
-                    <button onClick={close} className="close-cart-btn">
+                    <button onClick={closeCart} className="close-cart-btn">
                         <img src={CloseIcon} alt="Close" />
                     </button>
                 </div>
