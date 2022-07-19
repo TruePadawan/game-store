@@ -47,9 +47,9 @@ const RouteSwitch = () => {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<App />} />
+        <Route path="game-store/" element={<App />} />
         <Route
-          path="discover"
+          path="game-store/discover"
           element={
             <Discover
               openCart={_openCart}
@@ -62,7 +62,7 @@ const RouteSwitch = () => {
           }
         />
         <Route
-          path="store"
+          path="game-store/store"
           element={
             <Store
               openCart={_openCart}
