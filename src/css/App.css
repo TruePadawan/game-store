@@ -101,6 +101,9 @@ section > h2 {
     display: flex;
     justify-content: space-between;
     background-color: #242424;
+    position: sticky;
+    top: 0;
+    z-index: 1;
 }
 
 .search-bar, .category-bar {
