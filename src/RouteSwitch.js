@@ -1,17 +1,17 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import App from "./App";
 import Discover from "./components/pages/Discover";
 import Store from "./components/pages/Store";
 
 const RouteSwitch = () => {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         <Route path="/game-store" element={<App />} />
         <Route path="/game-store/discover" element={<Discover />} />
         <Route path="/game-store/store" element={<Store />} />
         <Route
-          path="*"
+          path="/game-store/*"
           element={
             <main>
               <p>There's nothing here.</p>
@@ -19,7 +19,7 @@ const RouteSwitch = () => {
           }
         />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 };
 
