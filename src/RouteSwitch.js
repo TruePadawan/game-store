@@ -5,13 +5,13 @@ import Store from "./components/pages/Store";
 
 const RouteSwitch = () => {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/game-store">
       <Routes>
-        <Route path="/game-store" element={<App />} />
-        <Route path="/game-store/discover" element={<Discover />} />
-        <Route path="/game-store/store" element={<Store />} />
+        <Route path="/" element={<App />} />
+        <Route path="/discover" element={<Discover />} />
+        <Route path="/store" element={<Store />} />
         <Route
-          path="/game-store/*"
+          path="/*"
           element={
             <main>
               <p>There's nothing here.</p>

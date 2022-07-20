@@ -26,10 +26,10 @@ const Store = () => {
       {isCartOpen() && <Cart />}
       <div className="page">
         <nav>
-          <Link to={"/game-store"} className="title">HERMES</Link>
+          <Link to={"/"} className="title">HERMES</Link>
           <div className="page-links">
-            <Link to={"/game-store/discover"}>Discover</Link>
-            <Link to={"/game-store/store"} className="active">Store</Link>
+            <Link to={"/discover"}>Discover</Link>
+            <Link to={"/store"} className="active">Store</Link>
             <CartButton />
           </div>
         </nav>
