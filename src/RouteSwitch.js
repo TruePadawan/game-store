@@ -5,7 +5,7 @@ import Store from "./components/pages/Store";
 
 const RouteSwitch = () => {
   return (
-    <HashRouter basename="/game-store">
+    <HashRouter>
       <Routes>
         <Route path="/" element={<App />} />
         <Route path="/discover" element={<Discover />} />
